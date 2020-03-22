@@ -4,4 +4,4 @@ steps:
       args: ['tasks']
     - name: gradle:6.2.2-jdk11
       entrypoint: gradle
-      args: ['bootJar -Pprod jibDockerBuild']
+      args: ['bootJar', '-Pprod', 'jibDockerBuild']
