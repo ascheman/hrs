@@ -1,4 +1,4 @@
 steps:
     - name: jhipster/jhipster
-      entrypoint: gradle
-      args: ['bootJar', '-Pprod', 'jibDockerBuild']
+      entrypoint: bash
+      args: ['./gradlew', 'bootJar', '-Pprod', 'jibDockerBuild']
