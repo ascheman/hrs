@@ -1,7 +1,4 @@
 steps:
-    - name: gradle:6.2.2-jdk11
-      entrypoint: gradle
-      args: ['tasks']
-    - name: gradle:6.2.2-jdk11
+    - name: jhipster/jhipster
       entrypoint: gradle
       args: ['bootJar', '-Pprod', 'jibDockerBuild']
