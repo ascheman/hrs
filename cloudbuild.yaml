@@ -1,7 +1,16 @@
 steps:
     - name: jhipster/jhipster
       entrypoint: bash
-      args: ['ls', '-ltra', ';', 'pwd', ';', 'env', ';', 'id', '-a']
+      args: ['ls', '-ltra']
+    - name: jhipster/jhipster
+      entrypoint: bash
+      args: ['pwd']
+    - name: jhipster/jhipster
+      entrypoint: bash
+      args: ['env']
+    - name: jhipster/jhipster
+      entrypoint: bash
+      args: ['id', '-a']
     - name: jhipster/jhipster
       entrypoint: bash
       env:
