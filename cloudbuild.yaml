@@ -1,6 +1,9 @@
 steps:
     - name: jhipster/jhipster
       entrypoint: bash
+      args: ['ls', '-ltra', ';', 'pwd', ';', 'env', ';', 'id', '-a']
+    - name: jhipster/jhipster
+      entrypoint: bash
       env:
           - 'HOME=/home/jhipster'
       args: ['./gradlew', '--stacktrace', '--no-daemon', 'bootJar', '-Pprod', 'jibDockerBuild']
