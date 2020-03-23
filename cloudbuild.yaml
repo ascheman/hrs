@@ -3,8 +3,4 @@ steps:
       entrypoint: bash
       env:
           - 'HOME=/home/jhipster'
-      volumes:
-          - name: 'workspace'
-            path: '/home/jhipster/app'
-      dir: '/home/jhipster/app'
       args: ['./gradlew', '--stacktrace', '--no-daemon', 'bootJar', '-Pprod', 'jibDockerBuild']
